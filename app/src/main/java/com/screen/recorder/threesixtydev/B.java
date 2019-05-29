@@ -1,4 +1,4 @@
-package com.deephost.screenrecorderapp;
+package com.screen.recorder.threesixtydev;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -20,12 +20,14 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 
+import  com.screen.recorder.threesixtydev.R;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-import static com.deephost.screenrecorderapp.C.cmy;
+import static com.screen.recorder.threesixtydev.C.cmy;
 
 public class B extends ArrayAdapter<A> {
     

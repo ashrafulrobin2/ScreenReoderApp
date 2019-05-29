@@ -7,20 +7,20 @@
         app:showAsAction="always"
         android:title="share" />
 
-    <item android:id="@+id/menu_rate"
+   <!-- <item android:id="@+id/menu_rate"
         android:icon="@drawable/ic_close"
-        android:title="Rateing" />
+        android:title="Rateing" />-->
 
-    <item android:id="@+id/menu_more"
+   <!-- <item android:id="@+id/menu_more"
         android:icon="@drawable/ic_close"
-        android:title="More Apps" />
+        android:title="More Apps" />-->
 
     <item android:id="@+id/menu_privacy"
         android:icon="@drawable/ic_close"
         android:title="Privacy Policy" />
 
-    <item android:id="@+id/menu_contact_us"
+  <!--  <item android:id="@+id/menu_contact_us"
         android:icon="@drawable/ic_close"
-        android:title="Contact Us" />
+        android:title="Contact Us" />-->
 
 </menu>

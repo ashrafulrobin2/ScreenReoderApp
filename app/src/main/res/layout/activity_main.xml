@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/bg"
     android:layout_height="match_parent"
-    tools:context=".C">
+    tools:context="com.screen.recorder.threesixtydev.C">
 
     <include layout="@layout/list_content" />
 

@@ -1,4 +1,4 @@
-package com.deephost.screenrecorderapp;
+package com.screen.recorder.threesixtydev;
 
 import android.annotation.SuppressLint;
 import android.media.CamcorderProfile;
@@ -48,11 +48,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.support.v4.app.NotificationCompat.Action;
 import android.support.v4.app.NotificationCompat;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.MobileAds;
+
+
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -85,8 +82,8 @@ public class C extends AppCompatActivity {
     long cld;
     private static final String YES_ACTION = "YES_ACTION";
     private NotificationManager notificationManager;
-    private InterstitialAd mInterstitialAd;
-    private AdView mAdView;
+   /* private InterstitialAd mInterstitialAd;*/
+   /* private AdView mAdView;*/
 
 
 
@@ -101,7 +98,7 @@ public class C extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MobileAds.initialize(this, getString(R.string.app_id));
+      /*  MobileAds.initialize(this, getString(R.string.app_id));
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId( getString(R.string.interstitial_id));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
@@ -115,7 +112,7 @@ public class C extends AppCompatActivity {
         });
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
         cl = new ArrayList<>();
         clv = (ListView) findViewById(R.id.cmy1);
         cxv = (FloatingActionButton) findViewById(R.id.fav);
@@ -142,7 +139,7 @@ public class C extends AppCompatActivity {
                     cxv.setImageResource(R.drawable.ic_recode);
                     ctgdd();
                     fhjbv();
-                    cfhgw();
+                  /*  cfhgw();*/
                 }
             }
         });
@@ -300,7 +297,7 @@ public class C extends AppCompatActivity {
                     cxv.setImageResource(R.drawable.ic_recode);
                     ctgdd();
                     fhjbv();
-                    cfhgw();
+                  /*  cfhgw();*/
                     break;
             }
         }
@@ -354,7 +351,7 @@ public class C extends AppCompatActivity {
             cxv.setImageResource(R.drawable.ic_clear);
             fflnke();
             cddvn();
-            cfdft();
+          /*  cfdft();*/
         }
         cmx = new MediaProjectionCallback();
         cme = cp.getMediaProjection(resultCode, data);
@@ -368,7 +365,7 @@ public class C extends AppCompatActivity {
         startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(startMain);
     }
-    public void cfdft(){
+   /* public void cfdft(){
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
     }
     public void cfhgw(){
@@ -378,7 +375,7 @@ public class C extends AppCompatActivity {
             mInterstitialAd.loadAd(new AdRequest.Builder().build());
         }
 
-    }
+    }*/
     private void ceendf() {
         if (cme == null) {
             startActivityForResult(cp.createScreenCaptureIntent(), REQUEST_CODE);
@@ -501,14 +498,14 @@ public class C extends AppCompatActivity {
 
         switch (item.getItemId())
         {
-            case R.id.menu_rate:
+           /* case R.id.menu_rate:
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id="+getPackageName()));
                 startActivity(intent);
 
-                return true;
+                return true;*/
 
-            case R.id.menu_more:
+   /*         case R.id.menu_more:
 
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id="+getString(R.string.Devloper_ID))));
@@ -516,7 +513,7 @@ public class C extends AppCompatActivity {
                 }
 
                 return true;
-
+*/
             case R.id.menu_privacy:
 
                 try {
@@ -526,13 +523,13 @@ public class C extends AppCompatActivity {
 
                 return true;
 
-            case R.id.menu_contact_us:
+           /* case R.id.menu_contact_us:
 
                 Intent email = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                         "mailto",getString(R.string.Email), null));
                 startActivity(Intent.createChooser(email, "Choose an Email client :"));
 
-                return true;
+                return true;*/
 
             default:
                 return super.onOptionsItemSelected(item);

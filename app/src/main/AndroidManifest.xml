@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.deephost.screenrecorderapp">
+    package="com.screen.recorder.threesixtydev">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -13,13 +13,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/videocamera"
+        android:icon="@drawable/screen_recorder"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/videocamera"
+        android:roundIcon="@drawable/screen_recorder"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.deephost.screenrecorderapp.C">
+        <activity android:name="com.screen.recorder.threesixtydev.C">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -34,10 +34,9 @@
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths"/>
         </provider>
-
-        <meta-data
+    <!--    <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/app_id"/>
+            android:value="@string/app_id"/>-->
 
     </application>
 
